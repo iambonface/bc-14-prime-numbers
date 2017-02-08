@@ -26,6 +26,10 @@ class TestPrimeNumbers(unittest.TestCase):
 		for i in result[1:]:
 			self.assertTrue(i % 2)
 
+	def test_get_prime_input_less_than_1_returns_none(self):
+		result = get_prime(1)
+		self.assertEquals(result, None)
+
 
 if __name__ == '__main__':
 	unittest.main()
