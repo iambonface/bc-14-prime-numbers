@@ -1,5 +1,6 @@
-from prime_numbers import get_prime
 import unittest
+import prime_numbers
+from prime_numbers import get_prime
 
 class TestPrimeNumbers(unittest.TestCase):
 
