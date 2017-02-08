@@ -21,6 +21,11 @@ class TestPrimeNumbers(unittest.TestCase):
 		result = get_prime(13)
 		self.assertEquals(result[-1], 13)
 
+	def test_get_prime_output_has_no_even_number_except_2(self):
+		result = get_prime(13)
+		for i in result[1:]:
+			self.assertTrue(i % 2)
+
 
 if __name__ == '__main__':
 	unittest.main()
