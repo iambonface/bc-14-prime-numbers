@@ -1,4 +1,5 @@
 
+[![Build Status](https://travis-ci.org/iambonface/bc-14-prime-numbers.png?branch=master)](https://travis-ci.org/iambonface/bc-14-prime-numbers)
 ## Prime Number Generator
 
     This is a function which generates prime numbers from 0 to n; n is any positive integer greater than 0 
