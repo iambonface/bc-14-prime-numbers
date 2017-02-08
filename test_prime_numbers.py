@@ -17,9 +17,6 @@ class TestPrimeNumbers(unittest.TestCase):
 		result = prime_numbers.get_prime(7)
 		self.assertEqual(result[0], 2)
 
-	def test_get_prime_output_includes_input_if_input_is_prime(self):
-		result = prime_numbers.get_prime(13)
-		self.assertEqual(result[-1], 13)
 
 	def test_get_prime_output_has_no_even_number_except_2(self):
 		result = prime_numbers.get_prime(13)
