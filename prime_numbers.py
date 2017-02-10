@@ -12,15 +12,13 @@ Exceptions:
     Raise TypeError if input n is of any other type other than int
 """
 def get_prime(n):
-
-	if isinstance(n, int):
-		if n >= 2:
-			target_prime = range(2, n+1)
-			for i in range(2,8):
-				target_prime = [x for x in target_prime if x == i or x % i ]
-			return target_prime
-		else:
-			return None
-
-	else:
+	if not isinstance(n, int):
 		raise TypeError("Invalid input {}".format(type(n)))
+	elif n >= 2:
+		target_prime = range(2, n+1)
+		for i in range(2,8):
+			target_prime = [x for x in target_prime if x == i or x % i ]
+		return target_prime
+	else:
+		return None
+		
